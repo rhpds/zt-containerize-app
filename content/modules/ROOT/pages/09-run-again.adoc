@@ -1,0 +1,23 @@
+In the previous step, you committed your container image. You can look
+at the images in the local container respository by using
+`+podman image list+`.
+
+[source,bash,run]
+----
+podman image list
+----
+
+Now that the image is available, you can run the container. Because this
+application is managed by a service, you will use the `+-d+` option to
+run the container in a detatched mode. Additionally, you will map
+content coming to port 8080 on the host system to be routed to the
+application running on the container’s port 80.
+
+[source,bash,run]
+----
+podman run -d -p 8080:80 clumsy-bird
+----
+
+You can now access the running `+clumsy-bird+` application by connecting
+to the system’s port 8080. The lab environment has this available to you
+under the *Containerized Web App* tab.

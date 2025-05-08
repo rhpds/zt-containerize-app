@@ -1,0 +1,20 @@
+At this point, the container is configured. It is time to transition
+from a working container into a committed image. In the command below,
+you will use the `+buildah+` command to commit the working container to
+an image called: `+moon-buggy+`.
+
+[source,bash,run]
+----
+buildah commit ubi-working-container moon-buggy
+----
+
+The above output shows that the commit was successful, however you can
+verify this by looking at the available container images on the system.
+
+[source,bash,run]
+----
+podman image list
+----
+
+Notice in the output above that `+moon-buggy+` is the first container
+image listed in the `+podman image list+` output.

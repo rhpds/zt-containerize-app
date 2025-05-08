@@ -1,0 +1,36 @@
+---
+antora:
+  name: modules
+  dir: www
+  modules:
+    - name: "01-download"
+      label: "Download"
+      solveButton: true
+    - name: "02-position"
+      label: "Position"
+      solveButton: true
+    - name: "03-install"
+      label: "Install"
+      solveButton: true
+    - name: "04-commit"
+      label: "Commit"
+      solveButton: true
+    - name: "05-run"
+      label: "Run"
+      solveButton: true
+    - name: "06-build"
+      label: "Build"
+      solveButton: true
+    - name: "07-install-additional-software"
+      label: "Install Additional Software"
+      solveButton: true
+    - name: "08-position-another"
+      label: "Position Another"
+      solveButton: true
+    - name: "09-run-again"
+      label: "Run Again"
+      solveButton: true
+
+tabs:
+  - name: ">_ terminal"
+    url: /wetty

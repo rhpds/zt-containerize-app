@@ -1,0 +1,31 @@
+Next you will pull down our application content from github and position
+it within the container image.
+
+First, clone the application content from github. For our example, we
+are using a javascript based web application.
+
+[source,bash,run]
+----
+git clone https://github.com/ellisonleao/clumsy-bird
+----
+
+From the above output, you can see that the clone has been successful
+and in the current directory, you should now see a directory called
+`+clumsy-bird+` that contains the javascript based application.
+
+Now, you will position this software within the container image you are
+building.
+
+[source,bash,run]
+----
+buildah copy ubi-working-container-1 clumsy-bird /var/www/html
+----
+
+At this point, all the software needed for the container is in the image
+contents. You can commit hte working container to a new container image
+called `+clumsy-bird+`.
+
+[source,bash,run]
+----
+buildah commit ubi-working-container-1 clumsy-bird
+----

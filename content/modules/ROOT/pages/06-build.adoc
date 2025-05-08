@@ -1,0 +1,12 @@
+Pull a RHEL 8 UBI image that you will build your application into.
+
+[source,bash,run]
+----
+buildah from registry.access.redhat.com/ubi8/ubi
+----
+
+From the output above, you can see the image was successfully downloaded
+and a working container image was created and attached to the system
+with the name `+ubi-working-container-1+` You will use this working
+container in the next steps to install additional software packages into
+the image.

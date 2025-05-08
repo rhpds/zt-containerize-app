@@ -1,0 +1,9 @@
+---
+name: modules
+version: master
+
+asciidoc:
+  attributes:
+    lab_name: "Build container images with Red Hat Enterprise Linux container tools"
+    release-version: master
+    page-pagination: true

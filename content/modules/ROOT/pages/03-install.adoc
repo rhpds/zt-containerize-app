@@ -1,0 +1,12 @@
+Now that the yum repositories are defined within the container, you can
+use another `+dnf install+`, executed within the container, to install
+the target software: `+moon-buggy+`.
+
+[source,bash,run]
+----
+buildah run ubi-working-container -- dnf -y install moon-buggy
+----
+
+From the above output, you can see that `+moon-buggy+` was successfully
+installed into the container. The `+dnf+` transaction also installed
+several required pieces of software as well.
