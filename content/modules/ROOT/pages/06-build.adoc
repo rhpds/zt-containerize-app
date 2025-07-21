@@ -1,12 +1,16 @@
-Pull a RHEL 8 UBI image that you will build your application into.
+Containers aren't just for making old software available on newer
+OS versions. Containers are most often used to encapsulate unpackaged
+software and it's dependencies as a single, transportable unit.
+
+Buildah supports this workflow just as it does RPM packaged software.
+Pull a RHEL 10 UBI image that you will target for your application.
 
 [source,bash,run]
 ----
-buildah from registry.access.redhat.com/ubi8/ubi
+buildah from registry.access.redhat.com/ubi10/ubi
 ----
 
 From the output above, you can see the image was successfully downloaded
 and a working container image was created and attached to the system
 with the name `+ubi-working-container-1+` You will use this working
-container in the next steps to install additional software packages into
-the image.
+container in the next steps to install additional software packages.

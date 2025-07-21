@@ -1,15 +1,20 @@
+Conatiners separate the application runtime environment from the hosting
+OS. In addtion to the usual benefits of containerizing an application, this
+means you can provide older software to newer systems.
+
+In this lab, you will be installing additional software into the
+container image, however that software runs as an interactive
+application. So you do not need `+systemd+` for managing services 
+within the running container. This means you can use the 
+*Standard* UBI image (as opposed to the Minimal or
+Multi-service images). The sofware needed is packaged as an RPM
+and can be directly installed from the repository via `dnf`.
+
 The Red Hat Universal Base Image (UBI) is produced by Red Hat and is an
 easy place to start when containerizing applications. If you want to
 read more about the UBI program, or the three different flavors of UBI,
 check out the https://developers.redhat.com/articles/ubi-faq[FAQ -
 Universal Base Images] for additional details.
-
-In this lab, you will be installing additional software into the
-container image, however that software runs as an interactive
-application. So you will need `+dnf+`, but do not need `+systemd+` for
-managing services within the container environment. For that reason, you
-will be using the *Standard* UBI image (as opposed to the Minimal or
-Multi-service images).
 
 By executing the command below, your system will download the Standard
 UBI image from Red Hat’s registry.

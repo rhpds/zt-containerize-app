@@ -1,5 +1,5 @@
 In the previous step, you committed your container image. You can look
-at the images in the local container respository by using
+at the images in local container storage by using
 `+podman image list+`.
 
 [source,bash,run]
@@ -10,7 +10,7 @@ podman image list
 Now that the image is available, you can run the container. Because this
 application is managed by a service, you will use the `+-d+` option to
 run the container in a detatched mode. Additionally, you will map
-content coming to port 8080 on the host system to be routed to the
+traffic coming to port 8080 on the host system to be routed to the
 application running on the container’s port 80.
 
 [source,bash,run]

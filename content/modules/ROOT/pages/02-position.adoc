@@ -11,8 +11,8 @@ some Red Hat Enterprise Linux repositories. However, the target package
 for the lab is from EPEL. In this step you will install the EPEL
 repository inside the container working image.
 
-In the command below, `+buildah+` is going to run a command on the
-`+ubi-working-container+` image. The `+--+` indicates that the command
+In the command below, `+buildah+` is going to run a command in the
+`+ubi-working-container+`. The `+--+` indicates that the command
 should be executed from within the container, which means the results
 will be applied into the container image. Lastly, you are providing the
 `+dnf+` command to install a package that defines all of the
@@ -20,7 +20,7 @@ repositories from EPEL, `+epel-release-latest-9+`.
 
 [source,bash,run]
 ----
-buildah run ubi-working-container -- dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+buildah run ubi-working-container -- dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm
 ----
 
 From the above output, you can see that the epel-release RPM was

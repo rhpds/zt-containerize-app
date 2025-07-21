@@ -18,3 +18,22 @@ podman image list
 
 Notice in the output above that `+moon-buggy+` is the first container
 image listed in the `+podman image list+` output.
+
+Buildah also has access to local container storage, and shows the same 
+view as podman.
+
+[source,bash,run]
+----
+buildah image list
+----
+
+However, they have different views of active containers. The working
+container `ubi-working-container` is only visible to `buildah`. It's
+good practice to clean up the working containers when using `buildah`
+this way.
+
+[source,bash,run]
+----
+buildah ps -a
+podman ps -a
+----
