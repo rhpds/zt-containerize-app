@@ -19,5 +19,9 @@ podman run -d -p 8080:80 clumsy-bird
 ----
 
 You can now access the running `+clumsy-bird+` application by connecting
-to the system’s port 8080. The lab environment has this available to you
-under the *Containerized Web App* tab.
+to the system’s port 8080. 
+
+[source,sh,subs=attributes+]
+----
+http://builder.{guid}.{domain}:8080/
+----
