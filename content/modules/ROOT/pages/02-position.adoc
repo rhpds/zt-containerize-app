@@ -20,7 +20,7 @@ repositories from EPEL, `+epel-release-latest-9+`.
 
 [source,bash,run]
 ----
-buildah run ubi-working-container -- dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm
+buildah run ubi-working-container -- dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 ----
 
 From the above output, you can see that the epel-release RPM was

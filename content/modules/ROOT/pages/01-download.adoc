@@ -16,8 +16,16 @@ read more about the UBI program, or the three different flavors of UBI,
 check out the https://developers.redhat.com/articles/ubi-faq[FAQ -
 Universal Base Images] for additional details.
 
+Our working system is RHEL 10, but the application we need is only 
+packaged in EPEL for RHEL 9. 
+
+[source,bash,run]
+----
+cat /etc/redhat-release
+----
+
 By executing the command below, your system will download the Standard
-UBI image from Red Hat’s registry.
+UBI 9 image from Red Hat’s registry.
 
 [source,bash,run]
 ----
