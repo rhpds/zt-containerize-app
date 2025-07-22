@@ -12,16 +12,16 @@ virtualmachines:
     networks:
       - default
     services:
-      - name: rhel-http
+      - name: rhel
         ports:
           - port: 8080
             protocol: TCP
             targetPort: 8080
-            name: rhel-http
+            name: rhel
     routes:
-      - name: rhel-http
+      - name: rhel
         host: rhel
-        service: rhel-http
+        service: rhel
         targetPort: 8080
         tls: false
 
