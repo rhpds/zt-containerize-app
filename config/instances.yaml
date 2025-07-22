@@ -14,14 +14,14 @@ virtualmachines:
     services:
       - name: rhel-http
         ports:
-          - port: 80
+          - port: 8080
             protocol: TCP
-            targetPort: 80
+            targetPort: 8080
             name: rhel-http
     routes:
       - name: rhel-http
         host: rhel
         service: rhel-http
-        targetPort: 80
+        targetPort: 8080
         tls: false
 
