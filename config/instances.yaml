@@ -12,16 +12,16 @@ virtualmachines:
     networks:
       - default
     services:
-      - name: builder-http
+      - name: rhel-http
         ports:
           - port: 80
             protocol: TCP
             targetPort: 80
-            name: builder-http
+            name: rhel-http
     routes:
-      - name: builder-http
-        host: builder
-        service: builder-http
+      - name: rhel-http
+        host: rhel
+        service: rhel-http
         targetPort: 80
         tls: false
 
