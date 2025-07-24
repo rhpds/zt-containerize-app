@@ -23,5 +23,5 @@ to the system’s port 8080.
 
 [source,sh,subs=attributes+]
 ----
-http://rhel-guid}.{domain}:8080
+http://rhel.{guid}.{domain}
 ----
