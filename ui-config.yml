@@ -37,5 +37,5 @@ tabs:
   - name: "Application container"
     url: http://rhel.${guid}.${domain}/
     modules:
-    - module-9
+    - 09-run-again
     
