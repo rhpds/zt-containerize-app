@@ -11,17 +11,10 @@ virtualmachines:
         value: "bastions"
     networks:
       - default
-    services:
-      - name: rhel
-        ports:
-          - port: 8080
-            protocol: TCP
-            targetPort: 8080
-            name: rhel
-    routes:
-      - name: rhel
-        host: rhel
-        service: rhel
-        targetPort: 8080
-        tls: false
+    userdata: |
+      #cloud-config
+      fqdn: rhel.lab
+      hostname: rhel
+      prefer_fqdn_over_hostname: true
+      manage_etc_hosts: true
 
