@@ -11,10 +11,3 @@ virtualmachines:
         value: "bastions"
     networks:
       - default
-    userdata: |
-      #cloud-config
-      fqdn: rhel.lab
-      hostname: rhel
-      prefer_fqdn_over_hostname: true
-      manage_etc_hosts: true
-
