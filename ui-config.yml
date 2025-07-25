@@ -35,7 +35,7 @@ tabs:
   - name: ">_ terminal"
     url: /wetty
   - name: "Application container"
-    url: http://rhel.${guid}.${domain}/
+    url: http://rhel-${guid}.${domain}
     modules:
     - 09-run-again
     
