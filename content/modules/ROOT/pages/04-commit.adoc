@@ -24,7 +24,7 @@ view as podman.
 
 [source,bash,run]
 ----
-buildah image list
+buildah images
 ----
 
 However, they have different views of active containers. The working

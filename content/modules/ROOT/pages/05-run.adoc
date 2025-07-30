@@ -14,10 +14,15 @@ You can now play the Moon Buggy game, which is a text-based version of
 the popular Moon Patrol. When you are finished, use the `+q+` command to
 quit the game, which will terminate the container.
 
+////
+Removing this block until we decide to add a second terminal to mirror
+the original lab
+
 Alternatively you can use `+podman+` to kill the running container from
 *Terminal 2*.
 
-[source,bash,run]
+[source,sh]
 ----
 podman kill $(podman ps | grep -v CONTAINER | cut -f1 -d" " )
 ----
+////
