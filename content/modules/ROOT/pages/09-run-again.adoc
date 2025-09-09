@@ -25,3 +25,8 @@ or copy the link below to a new window.
 ----
 http://rhel.{guid}.{domain}
 ----
+
+You've now used `buildah` to add application source code and RPM packaged software 
+to a container image, as well as adding configurations to the container. You should 
+be able to use `buildah` to generate an image for any application and dependencies 
+from any source. 
