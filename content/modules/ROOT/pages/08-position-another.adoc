@@ -1,17 +1,21 @@
-First, clone the application content from github. For our example, we
-are using a javascript based web application.
+For our example, we are using a javascript based web application. This was
+cloned from GitHub during the lab setup. 
 
 [source,bash,run]
 ----
-git clone https://github.com/ellisonleao/clumsy-bird
+git -C clumsy-bird status
 ----
+````
+On branch main
+Your branch is up to date with 'origin/main'.
+````
 
 From the above output, you can see that the clone has been successful
-and in the current directory, you should now see a directory on the 
-huild host called `+clumsy-bird+` that contains the source for the application.
+and there is a directory on the huild host called `+clumsy-bird+` that 
+contains the source for the application.
 
-Now, you will add this software within the container image you are
-building.
+Now, you will copy the full directory into the working container. 
+The `buildah copy` command works the same as the `COPY` directive in a Containerfile.
 
 [source,bash,run]
 ----
