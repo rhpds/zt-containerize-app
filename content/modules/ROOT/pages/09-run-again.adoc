@@ -18,12 +18,12 @@ application running on the container’s port 80.
 podman run -d -p 8080:80 clumsy-bird
 ----
 
-You can now access the http://rhel.{guid}.{domain}[running `+clumsy-bird+` application,window=_blank]
+You can now access the http://rhel-{guid}.{domain}[running `+clumsy-bird+` application,window=_blank]
 or copy the link below to a new window.
 
 [source,sh,subs=attributes+]
 ----
-http://rhel.{guid}.{domain}
+http://rhel-{guid}.{domain}
 ----
 
 You've now used `buildah` to add application source code and RPM packaged software 
