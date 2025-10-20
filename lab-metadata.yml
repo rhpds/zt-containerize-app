@@ -25,6 +25,7 @@ lab:
     
   git_ref:
     production: "prod"
+    development: "dev"
 
 # DYNAMIC EXTRACTION SOURCES:
 # ===========================
