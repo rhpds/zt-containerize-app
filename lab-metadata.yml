@@ -2,25 +2,21 @@
 # Single Point of Truth for Lab Information
 
 lab:
-  name: "Build container images with Red Hat Enterprise Linux container tools"
+  name: "Build application containers with Red Hat Enterprise Linux container tools"
   shortname: "zt-containerize-app"
   maintainer: "Wilson Harris (wharris@redhat.com)" 
   
   description:
     summary: "Add an existing application to a Red Hat universal base image container and
   deploy it"
-    goal: "After completing this scenario, users will be able to install additional
-  software into a container image."
+    goal: "After completing this scenario, nario, users will be able to containerize existing applications and understand the process of converting applications to run in containers."
     concepts:
-      - "Downloading a Red Hat Universal Base Image (UBI)"
-      - "Positioning or configuring a container to use 3rd party repositories"
-      - "Install 3rd party software into the container image"
-      - "Commit changes to create a new container image"
-      - " Validate the containerized application"
-    use_case: " You have a piece of software that you would like to deploy within a container
-  image rather than installing it natively on the host system.  By using a
-  container image, you can copy the entire environment for the software to
-  several different hosts or run multiple copies of it on the same system."
+      - "Analyzing existing applications for containerization"
+      - "Creating container images from applications"
+      - "Managing application dependencies in containers"
+      - "Configuring container networking and storage"
+      - "Deploying containerized applications"
+    use_case: "A developer needs to containerize a legacy application to run in a modern containerized environment while maintaining functionality and improving deployment flexibility"
     time_to_complete: "20"
     
   git_ref:
