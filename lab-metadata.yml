@@ -9,7 +9,7 @@ lab:
   description:
     summary: "Add an existing application to a Red Hat universal base image container and
   deploy it"
-    goal: "After completing this scenario, nario, users will be able to containerize existing applications and understand the process of converting applications to run in containers."
+    goal: "After completing this scenario, users will be able to containerize existing applications and understand the process of converting applications to run in containers."
     concepts:
       - "Analyzing existing applications for containerization"
       - "Creating container images from applications"
