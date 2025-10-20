@@ -1,0 +1,57 @@
+# lab-metadata.yml
+# Single Point of Truth for Lab Information
+
+lab:
+  name: "Build container images with Red Hat Enterprise Linux container tools"
+  shortname: "zt-containerize-app"
+  maintainer: "Wilson Harris (wharris@redhat.com)" 
+  
+  description:
+    summary: "Add an existing application to a Red Hat universal base image container and
+  deploy it"
+    goal: "After completing this scenario, users will be able to install additional
+  software into a container image."
+    concepts:
+      - "Downloading a Red Hat Universal Base Image (UBI)"
+      - "Positioning or configuring a container to use 3rd party repositories"
+      - "Install 3rd party software into the container image"
+      - "Commit changes to create a new container image"
+      - " Validate the containerized application"
+    use_case: " You have a piece of software that you would like to deploy within a container
+  image rather than installing it natively on the host system.  By using a
+  container image, you can copy the entire environment for the software to
+  several different hosts or run multiple copies of it on the same system."
+    time_to_complete: "20"
+    
+  git_ref:
+    production: "prod"
+
+# DYNAMIC EXTRACTION SOURCES:
+# ===========================
+#
+# GENERATED FILES:
+# description.adoc: Generated from lab.description (goal, concepts, use_case)
+# README.md: Generated from configuration extraction (maintainer, summary, instances, networks, firewall)
+# dev.yaml: Generated using git_ref.development (defaults to "main" if not specified)
+# prod.yaml: Generated using git_ref.production (required)
+#
+# Example usage:
+# lab:
+#   name: "Red Hat OpenShift Networking Basics"      # Full name of the lab that appears in the catalog
+#   shortname: "zt-ocp-networking-basics"            # Shortname for the lab (used for catalog entry)
+#   maintainer: "Wilson Harris (wharris@redhat.com)" # Lab maintainer / developer
+#
+#   description:
+#     summary: "Learn the fundamentals of networking in Red Hat OpenShift" # Short summary of the lab
+#     goal: "Understand OpenShift networking concepts and configuration"   # Longer description of the lab's goal
+#     concepts:                                                            # List of concepts covered in the lab
+#       - "OpenShift Services"
+#       - "Routes and Ingress"
+#       - "Network Policies"
+#     use_case: "Configure networking for containerized applications"      # Use case for the lab
+#     time_to_complete: "10"                                               # time in minutes to complete the lab
+#   
+#   git_ref:
+#     production: "prod"    # Production git reference (required)
+#     # development: "dev"  # Optional: defaults to "main" if not specified
+#
